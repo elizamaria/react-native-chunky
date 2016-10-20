@@ -13,3 +13,9 @@ export { default as Container } from './lib/core/Container'
 
 // Make the common containers available to the host app
 export * from './lib/data/containers'
+
+// Expose operations to the host app
+export { default as RemoteOperation } from './lib/data/operations'
+
+// Allow host apps to access common configurations
+export * from './lib/config'
