@@ -1,11 +1,5 @@
-<p align="center">
-  <a href="https://github.com/idancali/react-native-chunky">
-    <h1 align="center"> Chunky </h1>
-  </a>
-  <p align="center"> <b> Chunky </b> beefs up your React Native app </p>
-</p>
-
 # Chunky
+Build React Native apps faster. And easier.
 
 [![Version](https://img.shields.io/npm/v/react-native-chunky.svg)](https://www.npmjs.com/package/react-native-chunky)
 [![Author](https://img.shields.io/badge/say%20hi-%40idancali-green.svg)](https://twitter.com/idancali)
