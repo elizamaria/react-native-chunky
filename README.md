@@ -7,7 +7,7 @@ Build React Native apps faster. And easier.
 
 # Overview
 
-Chunky helps you solid React Native applications, faster and easier.
+Chunky helps you build solid React Native applications, faster and easier.
 
 # Installation
 
