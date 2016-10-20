@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/idancali/react-native-chunky">
-    <h1> Chunky </h1>
+    <h1 align="center"> Chunky </h1>
   </a>
   <p align="center"> <b> Chunky </b> beefs up your React Native app </p>
 </p>
@@ -15,7 +15,6 @@
 
 Chunky helps you solid React Native applications, faster and easier.
 
-```
 # Installation
 
 Add Chunky to your app as a dependency:
