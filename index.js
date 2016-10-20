@@ -8,5 +8,8 @@ export function startApp(props) {
   AppRegistry.registerComponent(props.name, () => Main)
 }
 
+// Allow the app to define custom containers
+export { default as Container } from './lib/core/Container'
+
 // Make the common containers available to the host app
 export * from './lib/data/containers'
