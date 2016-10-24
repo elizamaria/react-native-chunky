@@ -25,7 +25,7 @@ export { default as RemoteOperation } from './lib/data/operations'
 // Allow host apps to access common configurations
 export * from './lib/config'
 
-// Give host apps the ability to fetch the token
+// Give host apps the ability to fetch the auth token
 export function retrieveAuthToken() {
   return new Promise((resolve, reject) => {
     AsyncStorage.getItem(Config.AUTH_TOKEN_CACHE_KEY, (error, authToken) => {
@@ -35,6 +35,20 @@ export function retrieveAuthToken() {
         return
       }
       resolve(authToken)
+    })
+  })
+}
+
+// Give host apps the ability to clean up the auth token
+export function clearAuthToken() {
+  return new Promise((resolve, reject) => {
+    AsyncStorage.removeItem(Config.AUTH_TOKEN_CACHE_KEY, (error) => {
+      if (error) {
+        // The token could not be removed
+        reject(Errors.COULD_NOT_CLEAR_CACHED_TOKEN)
+        return
+      }
+      resolve()
     })
   })
 }
