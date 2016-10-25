@@ -1,4 +1,4 @@
-import App                from './lib/core/App'
+import AppContainer       from './lib/core/AppContainer'
 import React              from 'react'
 import * as Config        from './lib/config'
 import * as Errors        from './lib/errors'
@@ -9,9 +9,12 @@ import {
 
 // Allow the host app to start from this entry point
 export function startApp(props) {
-  const Main = () => (<App {...props}/>)
+  const Main = () => (<AppContainer {...props}/>)
   AppRegistry.registerComponent(props.name, () => Main)
 }
+
+// Give apps a starter for error handling
+export { default as AppError } from './lib/core/Error'
 
 // Allow the app to define custom containers
 export { default as Container } from './lib/core/Container'
@@ -20,35 +23,10 @@ export { default as Container } from './lib/core/Container'
 export * from './lib/data/containers'
 
 // Expose operations to the host app
-export { default as RemoteOperation } from './lib/data/operations'
+export { default as RemoteOperation } from './lib/data/operations/RemoteOperation'
 
 // Allow host apps to access common configurations
-export * from './lib/config'
+export { Config }
 
-// Give host apps the ability to fetch the auth token
-export function retrieveAuthToken() {
-  return new Promise((resolve, reject) => {
-    AsyncStorage.getItem(Config.AUTH_TOKEN_CACHE_KEY, (error, authToken) => {
-      if (error || !authToken) {
-        // The token was not found locally
-        reject(Errors.COULD_NOT_RETRIEVE_CACHED_TOKEN)
-        return
-      }
-      resolve(authToken)
-    })
-  })
-}
-
-// Give host apps the ability to clean up the auth token
-export function clearAuthToken() {
-  return new Promise((resolve, reject) => {
-    AsyncStorage.removeItem(Config.AUTH_TOKEN_CACHE_KEY, (error) => {
-      if (error) {
-        // The token could not be removed
-        reject(Errors.COULD_NOT_CLEAR_CACHED_TOKEN)
-        return
-      }
-      resolve()
-    })
-  })
-}
+// Give apps access to the common cache
+export * from './lib/data/cache'
