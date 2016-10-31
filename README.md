@@ -1,20 +1,44 @@
-# Chunky
-Build React Native apps faster. And easier.
+<p align="center">
+  <a href="https://github.com/idancali/react-native-chunky">
+    <img height="256" src="https://raw.githubusercontent.com/idancali/react-native-chunky/master/logo.png">
+  </a>
+  <p align="center"> <b> React Native Chunky </b> Saves Your React <b> Mobile </b> Apps From Spaghetti Code By Splitting Them Into Manageable Chunks. </p>
+</p>
 
-[![Version](https://img.shields.io/npm/v/react-native-chunky.svg)](https://www.npmjs.com/package/react-native-chunky)
+# React Native Chunky
+[![Version](https://img.shields.io/npm/v/react-chunky.svg)](https://www.npmjs.com/package/react-native-chunky)
 [![Author](https://img.shields.io/badge/say%20hi-%40idancali-green.svg)](https://twitter.com/idancali)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fidancali)
 
 # Overview
 
-Chunky helps you build solid React Native applications, faster and easier.
+Chunky helps you build solid React Web and Mobile apps, faster and easier. It does that by splitting up parts of your app into more manageable sections - or Chunks.
 
 # Installation
 
-Add Chunky to your app as a dependency:
+To install React Native Chunky add the dependency to your app. Please not that it includes ```react-native``` so you don't need to add it to your app prior to installing React Native Chunky.
+
 
 ```javascript
 npm install --save react-native-chunky
+```
+
+# Usage
+
+To add React Native Chunky to your app, you need to call ```renderApp``` with the appropriate properties. Those include your app reducers, initial route, app name, custom styles and app configuration details. Here's what that would look like in practice:
+
+```javascript
+import { reducers }           from './js/data'
+import { Styles as styles }   from './js/styles'
+import { START_ROUTE }        from './js/routes'
+import * as config            from './js/config'
+import { renderApp }          from 'react-native-chunky'
+
+renderApp({
+  name: 'MyApp',
+  initialRoute: START_ROUTE,
+  reducers, styles, config
+})
 ```
 
 # License
