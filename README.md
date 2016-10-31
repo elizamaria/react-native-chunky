@@ -41,7 +41,7 @@ renderApp({
 })
 ```
 
-# Detailed Usage
+# Writing Chunks
 
 After bootstrapping your React Native app as shown above, using React Chunky inside your React Native App is not much different than using it for Web apps. The core React Chunky library is platform-independent and can simply be generally used is similar fashion in both Web and Mobile apps.
 
