@@ -23,7 +23,7 @@ To install React Native Chunky add the dependency to your app. Please not that i
 npm install --save react-native-chunky
 ```
 
-# Usage
+# Getting Started
 
 To add React Native Chunky to your app, you need to call ```renderApp``` with the appropriate properties. Those include your app reducers, initial route, app name, custom styles and app configuration details. Here's what that would look like in practice:
 
@@ -40,6 +40,12 @@ renderApp({
   reducers, styles, config
 })
 ```
+
+# Detailed Usage
+
+After bootstrapping your React Native app as shown above, using React Chunky inside your React Native App is not much different than using it for Web apps. The core React Chunky library is platform-independent and can simply be generally used is similar fashion in both Web and Mobile apps.
+
+Have a look at [Writing A Real-World Chunk](https://github.com/idancali/react-chunky#writing-a-real-world-chunk) for more details on what constitutes a full-blown Chunk.
 
 # License
 
