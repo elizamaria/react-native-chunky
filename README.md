@@ -2,7 +2,7 @@
   <a href="https://github.com/idancali/react-native-chunky">
     <img height="256" src="https://raw.githubusercontent.com/idancali/react-native-chunky/master/logo.png">
   </a>
-  <p align="center"> <b> React Native Chunky </b> Saves Your React <b> Mobile </b> Apps From Spaghetti Code By Splitting Them Into Manageable Chunks. </p>
+  <p align="center"> <b> React Native Chunky </b> Helps You Digest Your React Mobile Apps In Manageable Chunks. </p>
 </p>
 
 # React Native Chunky
