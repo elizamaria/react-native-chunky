@@ -6,7 +6,7 @@
 </p>
 
 # React Native Chunky
-[![Version](https://img.shields.io/npm/v/react-chunky.svg)](https://www.npmjs.com/package/react-native-chunky)
+[![Version](https://img.shields.io/npm/v/react-native-chunky.svg)](https://www.npmjs.com/package/react-native-chunky)
 [![Author](https://img.shields.io/badge/say%20hi-%40idancali-green.svg)](https://twitter.com/idancali)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fidancali)
 
